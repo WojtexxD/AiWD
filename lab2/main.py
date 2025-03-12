@@ -62,4 +62,30 @@ sumab = zad14.sum(axis=0)
 
 # zad15====================================
 zad15 = np.array([3, 8, 2, 5, 1, 4, 9, 7, 6, 0])
-zad15[(zad15 < zad15.mean())]=0
+zad15[(zad15 < zad15.mean())] = 0
+
+# zad16====================================
+wektor = np.array([10, 20, 30])
+macierz = np.array([[1], [2], [3], [4]])
+wynik = wektor + macierz
+
+# zad17====================================
+zad17 = np.array([8, 3, 9, 5, 1, 7, 2, 0, 6, 4, 15, 13, 19, 12,
+                11, 17, 14, 10, 16, 18, 25, 21, 23, 20, 22]).reshape(5,5)
+zad17.sort()
+
+# zad18====================================
+zad18 = np.zeros((2,3,4))
+print(f"liczba wymiarów: {zad18.ndim}")
+print(f"liczba elementów: {zad18.size}")
+
+# zad19====================================
+zad19a = np.array([[2], [4], [6]])
+zad19b = np.array([[1, 3, 5, 7]])
+zad19 = zad19a*zad19b
+
+# zad20====================================
+zad20 = np.arange(1,37).reshape(6,6).reshape((3,4,3))
+print(zad20[0].mean())
+print(zad20[1].mean())
+print(zad20[2].mean())
